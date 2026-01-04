@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Sai Pooja Pattal Dona Bhandar | Premium Disposables</title>
+    <meta name="description" content="Browse our complete range of paper cups, dona, pattal, disposable glasses and plates. Factory-direct pricing, GST registered, PAN India delivery.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- PNG Favicons for different sizes -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    
+    <!-- Apple Touch Icon (for iOS devices) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional Products Page Styles */
+        .products-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.7rem 1.5rem;
+            background: var(--white);
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .product-details-section {
+            padding: 4rem 20px;
+            background: var(--lighter-color);
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .detail-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+
+        .detail-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .detail-card ul {
+            list-style: none;
+        }
+
+        .detail-card ul li {
+            padding: 0.5rem 0;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .detail-card ul li i {
+            color: var(--primary-color);
+        }
+
+        .bulk-order-banner {
+            background: var(--gradient);
+            color: var(--white);
+            padding: 3rem 20px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+
+        .bulk-order-banner h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .bulk-order-banner p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="window.location.href='index.html'">
+                <img src="favicon.ico" alt="">
+
+                <!--<i class="fas fa-leaf"></i>-->
+                <span data-lang="company-name">Sai Pooja Pattal Dona</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-lang="nav-home">Home</a></li>
+                <li><a href="about.html" data-lang="nav-about">About</a></li>
+                <li><a href="products.html" class="active" data-lang="nav-products">Products</a></li>
+                <li><a href="contact.html" data-lang="nav-contact">Contact</a></li>
+                <li>
+                    <button class="language-toggle" id="languageToggle">
+                        <i class="fas fa-language"></i>
+                        <span id="currentLang">EN</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-lang="products-page-title">Our Premium Disposable Products</h1>
+            <p data-lang="products-page-subtitle">High-quality, eco-friendly solutions for every business need | Factory-direct pricing</p>
+        </div>
+    </section>
+
+    <!-- Products Filter -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all" data-lang="filter-all">All Products</button>
+                <button class="filter-btn" data-filter="cups" data-lang="filter-cups">Paper Cups</button>
+                <button class="filter-btn" data-filter="glasses" data-lang="filter-glasses">Glasses</button>
+                <button class="filter-btn" data-filter="dona" data-lang="filter-dona">Dona & Pattal</button>
+                <button class="filter-btn" data-filter="plates" data-lang="filter-plates">Plates</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Paper Cups -->
+                <div class="product-card" data-category="cups" data-aos="fade-up">
+                    <div class="product-badge" data-lang="badge-bestseller">Best Seller</div>
+                    <div class="product-image">
+                        <img src="product1.jpeg" alt="">
+                       <!--  <i class="fas fa-mug-hot"></i>-->
+                        <div class="product-overlay">
+                            <a href="#paper-cups" class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="prod1-title">Paper Cups</h3>
+                        <p data-lang="prod1-desc">Premium quality paper cups in various sizes for hot & cold beverages, tea shops, and events</p>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec1">50ml</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec2">Food-grade material</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec3">Leak-proof design</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec4">Custom printing available</span></li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="price-tag">
+                                <small data-lang="starting-from">Starting from</small>
+                                <strong>₹0.1650/pc</strong>
+                            </div>
+                            <a href="https://wa.me/919893471456?text=I%20want%20quotation%20for%20Paper%20Cups" class="btn btn-whatsapp-small">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-lang="get-quote">Get Quote</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                  <!-- Paper Cups -->
+                <div class="product-card" data-category="cups" data-aos="fade-up">
+                    <div class="product-badge" data-lang="badge-bestseller">Best Seller</div>
+                    <div class="product-image">
+                        <img src="product2.jpeg" alt="">
+                       <!--  <i class="fas fa-mug-hot"></i>-->
+                        <div class="product-overlay">
+                            <a href="#paper-cups" class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="prod1-title">Paper Cups</h3>
+                        <p data-lang="prod1-desc">Premium quality paper cups in various sizes for hot & cold beverages, tea shops, and events</p>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec1">50ml to 500ml sizes</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec2">Food-grade material</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec3">Leak-proof design</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec4">Custom printing available</span></li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="price-tag">
+                                <small data-lang="starting-from">Starting from</small>
+                                <strong>₹0.25/pc</strong>
+                            </div>
+                            <a href="https://wa.me/919893471456?text=I%20want%20quotation%20for%20Paper%20Cups" class="btn btn-whatsapp-small">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-lang="get-quote">Get Quote</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                  <!-- Paper Cups -->
+                <div class="product-card" data-category="cups" data-aos="fade-up">
+                    <div class="product-badge" data-lang="badge-bestseller">Best Seller</div>
+                    <div class="product-image">
+                        <img src="product3.jpeg" alt="">
+                       <!--  <i class="fas fa-mug-hot"></i>-->
+                        <div class="product-overlay">
+                            <a href="#paper-cups" class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="prod1-title">Paper Cups</h3>
+                        <p data-lang="prod1-desc">Premium quality paper cups in various sizes for hot & cold beverages, tea shops, and events</p>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec1">50ml to 500ml sizes</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec2">Food-grade material</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec3">Leak-proof design</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec4">Custom printing available</span></li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="price-tag">
+                                <small data-lang="starting-from">Starting from</small>
+                                <strong>₹0.22/pc</strong>
+                            </div>
+                            <a href="https://wa.me/919893471456?text=I%20want%20quotation%20for%20Paper%20Cups" class="btn btn-whatsapp-small">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-lang="get-quote">Get Quote</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- Paper Cups -->
+                <div class="product-card" data-category="cups" data-aos="fade-up">
+                    <div class="product-badge" data-lang="badge-bestseller">Best Seller</div>
+                    <div class="product-image">
+                        <img src="product5.jpeg" alt="">
+                       <!--  <i class="fas fa-mug-hot"></i>-->
+                        <div class="product-overlay">
+                            <a href="#paper-cups" class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="prod1-title">Paper Cups</h3>
+                        <p data-lang="prod1-desc">Premium quality paper cups in various sizes for hot & cold beverages, tea shops, and events</p>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec1">50ml to 500ml sizes</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec2">Food-grade material</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec3">Leak-proof design</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec4">Custom printing available</span></li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="price-tag">
+                                <small data-lang="starting-from">Starting from</small>
+                                <strong>₹0.58/pc</strong>
+                            </div>
+                            <a href="https://wa.me/919893471456?text=I%20want%20quotation%20for%20Paper%20Cups" class="btn btn-whatsapp-small">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-lang="get-quote">Get Quote</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                  <!-- Paper Cups -->
+                <div class="product-card" data-category="cups" data-aos="fade-up">
+                    <div class="product-badge" data-lang="badge-bestseller">Best Seller</div>
+                    <div class="product-image">
+                        <img src="product7.jpeg" alt="">
+                       <!--  <i class="fas fa-mug-hot"></i>-->
+                        <div class="product-overlay">
+                            <a href="#paper-cups" class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="prod1-title">Paper Cups</h3>
+                        <p data-lang="prod1-desc">Premium quality paper cups in various sizes for hot & cold beverages, tea shops, and events</p>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec1">50ml to 500ml sizes</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec2">Food-grade material</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec3">Leak-proof design</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec4">Custom printing available</span></li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="price-tag">
+                                <small data-lang="starting-from">Starting from</small>
+                                <strong>₹0.1650/pc</strong>
+                            </div>
+                            <a href="https://wa.me/919893471456?text=I%20want%20quotation%20for%20Paper%20Cups" class="btn btn-whatsapp-small">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-lang="get-quote">Get Quote</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                  <!-- Paper Cups -->
+                <div class="product-card" data-category="cups" data-aos="fade-up">
+                    <div class="product-badge" data-lang="badge-bestseller">Best Seller</div>
+                    <div class="product-image">
+                        <img src="product9.jpeg" alt="">
+                       <!--  <i class="fas fa-mug-hot"></i>-->
+                        <div class="product-overlay">
+                            <a href="#paper-cups" class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="prod1-title">Paper Cups</h3>
+                        <p data-lang="prod1-desc">Premium quality paper cups in various sizes for hot & cold beverages, tea shops, and events</p>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec1">50ml to 500ml sizes</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec2">Food-grade material</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec3">Leak-proof design</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec4">Custom printing available</span></li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="price-tag">
+                                <small data-lang="starting-from">Starting from</small>
+                                <strong>₹0.17/pc</strong>
+                            </div>
+                            <a href="https://wa.me/919893471456?text=I%20want%20quotation%20for%20Paper%20Cups" class="btn btn-whatsapp-small">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-lang="get-quote">Get Quote</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                  <!-- Paper Cups -->
+                <div class="product-card" data-category="cups" data-aos="fade-up">
+                    <div class="product-badge" data-lang="badge-bestseller">Best Seller</div>
+                    <div class="product-image">
+                        <img src="product10.jpeg" alt="">
+                       <!--  <i class="fas fa-mug-hot"></i>-->
+                        <div class="product-overlay">
+                            <a href="#paper-cups" class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="prod1-title">Paper Cups</h3>
+                        <p data-lang="prod1-desc">Premium quality paper cups in various sizes for hot & cold beverages, tea shops, and events</p>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec1">50ml to 500ml sizes</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec2">Food-grade material</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec3">Leak-proof design</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod1-spec4">Custom printing available</span></li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="price-tag">
+                                <small data-lang="starting-from">Starting from</small>
+                                <strong>₹0.18/pc</strong>
+                            </div>
+                            <a href="https://wa.me/919893471456?text=I%20want%20quotation%20for%20Paper%20Cups" class="btn btn-whatsapp-small">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-lang="get-quote">Get Quote</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                                <!-- Wooden Disposable Spoons -->
+<div class="product-card" data-category="cutlery" data-aos="fade-up" data-aos-delay="300">
+    <div class="product-badge badge-eco" data-lang="badge-eco">Eco-Friendly</div>
+    <div class="product-image">
+        <img src="product6.jpeg" alt="Wooden Disposable Spoons - Eco-Friendly">
+        <div class="product-overlay">
+            <a href="#wooden-spoons" class="btn-icon">
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    <div class="product-info">
+        <h3 data-lang="prod6-title">Wooden Disposable Spoons</h3>
+        <p data-lang="prod6-desc">100% natural wooden spoons, eco-friendly alternative for parties, events, and food delivery services</p>
+        <ul class="product-specs">
+            <li><i class="fas fa-circle-check"></i> <span data-lang="prod6-spec1">100% Biodegradable</span></li>
+            <li><i class="fas fa-circle-check"></i> <span data-lang="prod6-spec2">Smooth finish</span></li>
+            <li><i class="fas fa-circle-check"></i> <span data-lang="prod6-spec3">Chemical-free wood</span></li>
+            <li><i class="fas fa-circle-check"></i> <span data-lang="prod6-spec4">Event & party use</span></li>
+        </ul>
+        <div class="product-footer">
+            <div class="price-tag">
+                <small data-lang="starting-from">Starting from</small>
+                <strong data-lang="get-quote-text">₹0.32/pc</strong>
+            </div>
+            <a href="https://wa.me/919893471456?text=I%20want%20quotation%20for%20Wooden%20Disposable%20Spoons" 
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-whatsapp-small">
+                <i class="fab fa-whatsapp"></i>
+                <span data-lang="get-quote">Get Quote</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+                <!-- Disposable Glasses -->
+                <div class="product-card" data-category="glasses" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-badge badge-popular" data-lang="badge-popular">Popular</div>
+                    <div class="product-image">
+                        <img src="product8.jpeg" alt="">
+                        <!--<i class="fas fa-glass-water"></i>-->
+                        <div class="product-overlay">
+                            <a href="#water-glasses" class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="prod2-title">Disposable Glasses</h3>
+                        <p data-lang="prod2-desc">Hygienic disposable water glasses for events, offices, parties, and public gatherings</p>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod2-spec1">Crystal clear quality</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod2-spec2">BPA-free material</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod2-spec3">100ml to 300ml</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod2-spec4">Bulk packing available</span></li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="price-tag">
+                                <small data-lang="starting-from">Starting from</small>
+                                <strong>₹0.75/pc</strong>
+                            </div>
+                            <a href="https://wa.me/919893471456?text=I%20want%20quotation%20for%20Disposable%20Glasses" class="btn btn-whatsapp-small">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-lang="get-quote">Get Quote</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dona & Pattal -->
+                <div class="product-card" data-category="dona" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-badge badge-eco" data-lang="badge-eco">Eco-Friendly</div>
+                    <div class="product-image">
+                        <img src="pattaldona.png" alt="">
+                        <!-- <i class="fas fa-bowl-food"></i> -->
+                        <div class="product-overlay">
+                            <a href="#dona-pattal" class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="prod3-title">Dona & Pattal</h3>
+                        <p data-lang="prod3-desc">Traditional eco-friendly dona bowls perfect for weddings, events, restaurants, and catering</p>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod3-spec1">100% biodegradable</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod3-spec2">Strong & durable</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod3-spec3">Multiple sizes</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod3-spec4">Wedding special packs</span></li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="price-tag">
+                                <small data-lang="starting-from">Starting from</small>
+                                <strong>get qoute</strong>
+                            </div>
+                            <a href="https://wa.me/919893471456?text=I%20want%20quotation%20for%20Dona%20Pattal" class="btn btn-whatsapp-small">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-lang="get-quote">Get Quote</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper Plates -->
+                <div class="product-card" data-category="plates" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-badge" data-lang="badge-premium">Premium</div>
+                    <div class="product-image">
+                        <img src="plates.png" alt="">
+                        <!-- <i class="fas fa-plate-utensils"></i>-->
+                        <div class="product-overlay">
+                            <a href="#paper-plates" class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang="prod4-title">Paper Plates & Thalis</h3>
+                        <p data-lang="prod4-desc">Durable disposable plates in various sizes perfect for catering, events, and daily use</p>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod4-spec1">Heavy-duty quality</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod4-spec2">Grease resistant</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod4-spec3">6" to 12" sizes</span></li>
+                            <li><i class="fas fa-circle-check"></i> <span data-lang="prod4-spec4">Compartment plates</span></li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="price-tag">
+                                <small data-lang="starting-from">Starting from</small>
+                                <strong>get qoute</strong>
+                            </div>
+                            <a href="https://wa.me/919893471456?text=I%20want%20quotation%20for%20Paper%20Plates" class="btn btn-whatsapp-small">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-lang="get-quote">Get Quote</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                
+
+
+            </div>
+
+            <!-- Bulk Order Banner -->
+            <div class="bulk-order-banner">
+                <h3 data-lang="bulk-banner-title">Need Bulk Quantities?</h3>
+                <p data-lang="bulk-banner-text">Get special wholesale pricing for orders above 10,000 pieces. Contact us for customized quotations!</p>
+                <a href="contact.html" class="btn btn-white">
+                    <i class="fas fa-envelope"></i>
+                    <span data-lang="bulk-banner-btn">Request Bulk Quote</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="product-details-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-lang="details-subtitle">Product Information</span>
+                <h2 data-lang="details-heading">Why Choose Our Products?</h2>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3 data-lang="detail1-title"><i class="fas fa-award"></i> Premium Quality</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail1-point1">ISO certified manufacturing</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail1-point2">Food-grade raw materials</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail1-point3">Strict quality control</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail1-point4">Tested for safety</span></li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3 data-lang="detail2-title"><i class="fas fa-leaf"></i> Eco-Friendly</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail2-point1">100% biodegradable options</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail2-point2">Recyclable materials used</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail2-point3">No harmful chemicals</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail2-point4">Environment certified</span></li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3 data-lang="detail3-title"><i class="fas fa-truck"></i> Fast Delivery</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail3-point1">PAN India delivery network</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail3-point2">3-7 days dispatch time</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail3-point3">Real-time order tracking</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail3-point4">Safe packaging guaranteed</span></li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3 data-lang="detail4-title"><i class="fas fa-hand-holding-dollar"></i> Best Pricing</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail4-point1">Factory-direct rates</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail4-point2">No middlemen markup</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail4-point3">Bulk order discounts</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail4-point4">Flexible payment terms</span></li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3 data-lang="detail5-title"><i class="fas fa-print"></i> Customization</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail5-point1">Logo printing available</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail5-point2">Brand customization</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail5-point3">Size variations offered</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail5-point4">Color options available</span></li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3 data-lang="detail6-title"><i class="fas fa-headset"></i> Support</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail6-point1">24/7 customer service</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail6-point2">Technical assistance</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail6-point3">Order tracking help</span></li>
+                        <li><i class="fas fa-check"></i> <span data-lang="detail6-point4">After-sales support</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- ====================================
+     LOCATION SECTION - Google Maps
+==================================== -->
+<section class="location-section" id="location">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <span class="section-subtitle" data-lang="map-subtitle">Find Us</span>
+            <h2 data-lang="map-heading">Our Location</h2>
+            <p data-lang="map-text">Visit us at Lasuliya mori Shop number 5, Shiv market,Essar petrol pump ke samne, Dewas Naka, Indore, Madhya Pradesh(453771), Madhya Pradesh - Serving customers across all 28 states of India</p>
+        </div>
+
+        <!-- Location Grid -->
+        <div class="location-grid">
+            
+            <!-- Left Side - Google Map -->
+            <div class="map-container">
+                <div class="map-wrapper">
+                    <!-- YOUR EXACT GOOGLE MAPS EMBED -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.7930765996293!2d75.90595119999999!3d22.7848337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39631d318b4487c3%3A0xfed503e85642ffe2!2sSai%20Pooja%20Pattal%20Dona%20Bhandar!5e1!3m2!1sen!2sin!4v1767031340486!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Sai Pooja Pattal Dona Bhandar Location">
+                    </iframe>
+                </div>
+                
+                <!-- Get Directions Button Overlay -->
+                <div class="map-overlay">
+                    <a href="https://www.google.com/maps/place/Sai+Pooja+Pattal+Dona+Bhandar/@22.7848337,75.90595119999999,17z/data=!3m1!4b1!4m6!3m5!1s0x39631d318b4487c3:0xfed503e85642ffe2!8m2!3d22.7848337!4d75.9059512!16s%2Fg%2F11y3z_8y4k?entry=ttu&g_ep=EgoyMDI1MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-primary">
+                        <i class="fas fa-directions"></i>
+                        <span data-lang="map-get-directions">Get Directions</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side - Contact Details -->
+            <div class="location-details">
+                
+                <!-- Address Card -->
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h4 data-lang="contact-address-title">Factory & Office Address</h4>
+                        <p data-lang="contact-address-text">
+                            Sai Pooja Pattal Dona Bhandar<br>
+                            Lasuliya mori Shop number 5, Shiv market,Essar petrol pump ke samne, Dewas Naka, Indore, Madhya Pradesh(453771)<br>
+                            Madhya Pradesh, India
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="detail-card">
+                    <div class="detail-icon phone-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h4 data-lang="contact-phone-title">Call Us Anytime</h4>
+                        <p>
+                            <a href="tel:+919893471456" class="contact-link">
+                                +91 98934 71456
+                            </a>
+                        </p>
+                        <small data-lang="contact-phone-hours">Available 24/7 for Your Needs</small>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Card -->
+                <div class="detail-card">
+                    <div class="detail-icon whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h4>WhatsApp</h4>
+                        <p>
+                            <a href="https://wa.me/919893471456?text=Hello%2C%20I%20am%20interested%20in%20your%20products" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="contact-link">
+                                +91 98934 71456
+                            </a>
+                        </p>
+                        <small data-lang="contact-whatsapp-text">Instant Response Guaranteed</small>
+                    </div>
+                </div>
+
+                <!-- Business Hours Card -->
+                <div class="detail-card">
+                    <div class="detail-icon clock-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h4>Business Hours</h4>
+                        <p>
+                            <strong>Monday - Sunday</strong><br>
+                            Open 24/7 for Orders & Support
+                        </p>
+                        <small>We Never Close - Always Available</small>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="location-cta">
+                    <a href="tel:+919893471456" class="btn btn-primary btn-large pulse-btn">
+                        <i class="fas fa-phone-alt"></i>
+                        Call Now
+                    </a>
+                    <a href="https://wa.me/919893471456?text=Hello%2C%20I%20want%20to%20order%20disposable%20products" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-whatsapp btn-large pulse-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp Now
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Trust Badges -->
+        <div class="location-trust-badges">
+            <div class="trust-badge-item">
+                <i class="fas fa-truck"></i>
+                <span>Pan India Delivery</span>
+            </div>
+            <div class="trust-badge-item">
+                <i class="fas fa-certificate"></i>
+                <span>GST Registered</span>
+            </div>
+            <div class="trust-badge-item">
+                <i class="fas fa-award"></i>
+                <span>ISO Certified</span>
+            </div>
+            <div class="trust-badge-item">
+                <i class="fas fa-leaf"></i>
+                <span>Eco-Friendly Products</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-lang="cta-heading">Ready to Order Premium Quality Disposables?</h2>
+                <p data-lang="cta-text">Contact us today for bulk quotes, product samples, free consultation, or any inquiries. Our expert team is ready to assist you 24/7!</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/919893471456?text=Hello!%20I%20need%20product%20quotation" class="btn btn-white pulse-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-lang="cta-whatsapp">WhatsApp for Instant Quote</span>
+                    </a>
+                    <a href="tel:+919893471456" class="btn btn-outline-white">
+                        <i class="fas fa-phone-volume"></i>
+                        <span data-lang="cta-call">Call: +91 98934 71456</span>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline-white">
+                        <i class="fas fa-envelope"></i>
+                        <span data-lang="cta-form">Fill Enquiry Form</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span data-lang="company-name">Sai Pooja Pattal Dona</span>
+                    </div>
+                    <p data-lang="footer-desc">India's most trusted manufacturer of premium disposable paper products. Serving businesses nationwide with unmatched quality, reliability, and excellence since 2010.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/919893471456" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+919893471456" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:amitm1508@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-lang="footer-quick">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-lang="nav-home">Home</a></li>
+                        <li><a href="about.html" data-lang="nav-about">About Us</a></li>
+                        <li><a href="products.html" data-lang="nav-products">Products</a></li>
+                        <li><a href="contact.html" data-lang="nav-contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-lang="footer-products">Our Products</h4>
+                    <ul>
+                        <li><a href="products.html#paper-cups" data-lang="prod1-title">Paper Cups</a></li>
+                        <li><a href="products.html#water-glasses" data-lang="prod2-title">Disposable Glasses</a></li>
+                        <li><a href="products.html#dona-pattal" data-lang="prod3-title">Dona & Pattal</a></li>
+                        <li><a href="products.html#paper-plates" data-lang="prod4-title">Paper Plates & Thalis</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-lang="footer-contact">Contact Information</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-user"></i>
+                            <span>Amit Majumdar</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919893471456">+91 98934 71456</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+918871230005">+91 88712 30005</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:amitm1508@gmail.com">amitm1508@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-lang="footer-address">Dewas Naka, Madhya Pradesh, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+          <div class="footer-bottom">
+    <p>
+        © 2025 Sai Pooja Pattal Dona Bhandar. All Rights Reserved. | GST Registered | Proudly Made in India 🇮🇳
+        <br>
+        <span style="font-size: 0.75rem; opacity: 0.8;">
+            Designed & Developed by 
+            <a href="https://theunlocksales.github.io/theunlocksales/" target="_blank" rel="noopener" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">
+                The Unlock Sales
+            </a>
+        </span>
+    </p>
+</div>
+
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919893471456?text=Hello!%20I%20want%20product%20information" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

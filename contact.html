@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sai Pooja Pattal Dona Bhandar | Get Quote Today</title>
+    <meta name="description" content="Contact Sai Pooja Pattal Dona Bhandar for bulk orders, quotations, and inquiries. Call +91 98934 71456 or WhatsApp for instant response.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- PNG Favicons for different sizes -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    
+    <!-- Apple Touch Icon (for iOS devices) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Contact Page Specific Styles */
+        .contact-main {
+            padding: 4rem 20px;
+            background: var(--lighter-color);
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info-section {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact-info-section h2 {
+            color: var(--dark-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .contact-info-section p {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--lighter-color);
+            border-radius: 15px;
+            transition: var(--transition);
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .contact-details h3 {
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .contact-details p {
+            color: var(--text-dark);
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .contact-details a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .contact-details a:hover {
+            color: var(--primary-dark);
+        }
+
+        .contact-form-section {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact-form-section h2 {
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .contact-form-section > p {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .form-group label .required {
+            color: var(--accent-color);
+            margin-left: 3px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 2px solid var(--light-color);
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            background: var(--white);
+            color: var(--text-dark);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 0.9rem 2rem;
+            background: var(--gradient);
+            color: var(--white);
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            background: var(--gradient-hover);
+        }
+
+        .btn-submit:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .map-section {
+            padding: 4rem 20px;
+            background: var(--white);
+        }
+
+        .map-container {
+            background: var(--lighter-color);
+            border-radius: 20px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .map-placeholder {
+            text-align: center;
+            color: var(--text-light);
+        }
+
+        .map-placeholder i {
+            font-size: 4rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .map-placeholder h3 {
+            font-size: 1.3rem;
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .quick-contact-cards {
+            padding: 4rem 20px;
+            background: var(--lighter-color);
+        }
+
+        .quick-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .quick-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .quick-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .quick-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .quick-card h3 {
+            font-size: 1.2rem;
+            color: var(--dark-color);
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .quick-card p {
+            color: var(--text-light);
+            margin-bottom: 1.2rem;
+            font-size: 0.9rem;
+        }
+
+        .quick-card .btn {
+            padding: 0.6rem 1.3rem;
+            font-size: 0.85rem;
+        }
+
+        .faq-section {
+            padding: 4rem 20px;
+            background: var(--white);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--lighter-color);
+            margin-bottom: 1rem;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--dark-color);
+            font-size: 1rem;
+            user-select: none;
+        }
+
+        .faq-question:hover {
+            background: rgba(46, 204, 113, 0.05);
+        }
+
+        .faq-question i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer-content {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 968px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .map-container {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .contact-info-section,
+            .contact-form-section {
+                padding: 1.5rem;
+            }
+
+            .contact-item {
+                padding: 1rem;
+            }
+
+            .contact-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="window.location.href='index.html'">
+                <img src="favicon.ico" alt="">
+                <!--<i class="fas fa-leaf"></i>-->
+                <span data-lang="company-name">Sai Pooja Pattal Dona</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-lang="nav-home">Home</a></li>
+                <li><a href="about.html" data-lang="nav-about">About</a></li>
+                <li><a href="products.html" data-lang="nav-products">Products</a></li>
+                <li><a href="contact.html" class="active" data-lang="nav-contact">Contact</a></li>
+                <li>
+                    <button class="language-toggle" id="languageToggle">
+                        <i class="fas fa-language"></i>
+                        <span id="currentLang">EN</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-lang="contact-page-title">Get in Touch With Us</h1>
+            <p data-lang="contact-page-subtitle">We're here to help! Contact us for bulk orders, quotations, product samples, or any inquiries</p>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="contact-main">
+        <div class="contact-wrapper">
+            <!-- Contact Information -->
+            <div class="contact-info-section">
+                <h2 data-lang="contact-info-title">Contact Information</h2>
+                <p data-lang="contact-info-text">Reach out to us through any of these channels. We're available 24/7 to assist you with your requirements.</p>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 data-lang="contact-phone-title">Phone Numbers</h3>
+                        <p>
+                            <a href="tel:+919893471456">+91 98934 71456</a><br>
+                            <a href="tel:+918871230005">+91 88712 30005</a>
+                        </p>
+                        <small data-lang="contact-phone-hours">Available 24/7</small>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 data-lang="contact-whatsapp-title">WhatsApp</h3>
+                        <p>
+                            <a href="https://wa.me/919893471456" target="_blank">+91 98934 71456</a>
+                        </p>
+                        <small data-lang="contact-whatsapp-text">Instant response guaranteed</small>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 data-lang="contact-email-title">Email Address</h3>
+                        <p>
+                            <a href="mailto:amitm1508@gmail.com">amitm1508@gmail.com</a>
+                        </p>
+                        <small data-lang="contact-email-text">We reply within 24 hours</small>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 data-lang="contact-address-title">Our Location</h3>
+                        <p data-lang="contact-address-text">
+                            Dewas Naka, Madhya Pradesh<br>
+                            India
+                        </p>
+                        <small data-lang="contact-visit-text">Visit us for bulk orders</small>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 data-lang="contact-person-title">Contact Person</h3>
+                        <p>
+                            <strong>Amit Majumdar</strong><br>
+                            <span data-lang="contact-person-role">Proprietor</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-section">
+                <h2 data-lang="contact-form-title">Send Us a Message</h2>
+                <p data-lang="contact-form-text">Fill out the form below and we'll get back to you as soon as possible with a customized quotation.</p>
+
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label data-lang="form-name">Your Name <span class="required">*</span></label>
+                            <input type="text" name="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label data-lang="form-company">Company Name</label>
+                            <input type="text" name="company" placeholder="Your company name">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label data-lang="form-phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" name="phone" required placeholder="10-digit mobile number">
+                        </div>
+                        <div class="form-group">
+                            <label data-lang="form-email">Email Address</label>
+                            <input type="email" name="email" placeholder="your@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-lang="form-subject">Order Type <span class="required">*</span></label>
+                        <select name="orderType" required>
+                            <option value="" data-lang="form-select-default">-- Select Order Type --</option>
+                            <option value="Bulk Order" data-lang="form-bulk">Bulk Order (10,000+ pieces)</option>
+                            <option value="Wholesale" data-lang="form-wholesale">Wholesale Order</option>
+                            <option value="Retail" data-lang="form-retail">Retail Order</option>
+                            <option value="Custom Order" data-lang="form-custom">Custom/Printing Order</option>
+                            <option value="Machine Service" data-lang="form-machine">Machine Maintenance</option>
+                            <option value="General Inquiry" data-lang="form-inquiry">General Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-lang="form-message">Your Message <span class="required">*</span></label>
+                        <textarea name="message" required placeholder="Please describe your requirements, quantity needed, delivery location, etc."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        <span data-lang="form-submit">Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Cards -->
+    <section class="quick-contact-cards">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-lang="quick-contact-subtitle">Quick Actions</span>
+                <h2 data-lang="quick-contact-heading">Choose Your Preferred Contact Method</h2>
+            </div>
+
+            <div class="quick-cards-grid">
+                <div class="quick-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3 data-lang="quick-whatsapp-title">WhatsApp Us</h3>
+                    <p data-lang="quick-whatsapp-text">Get instant replies and quick quotations on WhatsApp</p>
+                    <a href="https://wa.me/919893471456?text=Hello!%20I%20need%20product%20information" class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-lang="quick-whatsapp-btn">Chat Now</span>
+                    </a>
+                </div>
+
+                <div class="quick-card">
+                    <i class="fas fa-phone-volume"></i>
+                    <h3 data-lang="quick-call-title">Call Us Directly</h3>
+                    <p data-lang="quick-call-text">Speak to our team for immediate assistance</p>
+                    <a href="tel:+919893471456" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        <span data-lang="quick-call-btn">Call Now</span>
+                    </a>
+                </div>
+
+                <div class="quick-card">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h3 data-lang="quick-email-title">Email Inquiry</h3>
+                    <p data-lang="quick-email-text">Send detailed requirements via email</p>
+                    <a href="mailto:amitm1508@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        <span data-lang="quick-email-btn">Send Email</span>
+                    </a>
+                </div>
+
+                <div class="quick-card">
+                    <i class="fas fa-download"></i>
+                    <h3 data-lang="quick-catalog-title">Product Catalog</h3>
+                    <p data-lang="quick-catalog-text">Download our complete product brochure</p>
+                    <a href="https://wa.me/919893471456?text=Please%20send%20product%20catalog" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-file-pdf"></i>
+                        <span data-lang="quick-catalog-btn">Request Catalog</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-lang="map-subtitle">Find Us</span>
+                <h2 data-lang="map-heading">Our Location</h2>
+                <p data-lang="map-text">Located at Dewas Naka, Madhya Pradesh, serving clients across India</p>
+            </div>
+
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-location-dot"></i>
+                    <h3 data-lang="map-placeholder-title">Dewas Naka, Madhya Pradesh</h3>
+                    <p data-lang="map-placeholder-text">Contact us for exact location and directions</p>
+                    <a href="https://maps.app.goo.gl/ZRb2ghzzfoyRN7fp9" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">
+                        <i class="fas fa-location-dot"></i>
+                        <span data-lang="map-get-directions">Get Directions</span>
+                    </a>
+                </div>
+                <!-- You can replace this with actual Google Maps iframe -->
+                <!-- <iframe src="YOUR_GOOGLE_MAPS_EMBED_LINK" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-lang="faq-subtitle">Common Questions</span>
+                <h2 data-lang="faq-heading">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-lang="faq1-question">What is the minimum order quantity?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-lang="faq1-answer">
+                            We accept orders from as low as 1,000 pieces for retail customers. For wholesale and bulk orders, we offer better pricing starting from 10,000 pieces. There's no maximum limit!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-lang="faq2-question">What is the delivery time?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-lang="faq2-answer">
+                            Standard delivery takes 3-7 business days across India. For urgent orders, we offer express delivery options. Local orders can be dispatched the same day.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-lang="faq3-question">Do you provide custom printing?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-lang="faq3-answer">
+                            Yes! We offer custom logo printing and branding on paper cups, plates, and other products. Minimum order quantity applies for custom printing. Contact us for details.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-lang="faq4-question">What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-lang="faq4-answer">
+                            We accept bank transfers, UPI, cash on delivery (for local orders), and credit facilities for regular customers. GST invoices provided for all transactions.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-lang="faq5-question">Do you deliver across all states in India?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-lang="faq5-answer">
+                            Absolutely! We have a Pan India delivery network covering all 20 states. We ensure safe packaging and timely delivery to every corner of India.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-lang="faq6-question">Can I get product samples before ordering?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-lang="faq6-answer">
+                            Yes, we provide free samples for bulk order inquiries. Contact us with your requirements and we'll arrange sample delivery.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ====================================
+     LOCATION SECTION - Google Maps
+==================================== -->
+<section class="location-section" id="location">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <span class="section-subtitle" data-lang="map-subtitle">Find Us</span>
+            <h2 data-lang="map-heading">Our Location</h2>
+            <p data-lang="map-text">Visit us at Lasuliya mori Shop number 5, Shiv market,Essar petrol pump ke samne, Dewas Naka, Indore, Madhya Pradesh(453771), Madhya Pradesh - Serving customers across all 28 states of India</p>
+        </div>
+
+        <!-- Location Grid -->
+        <div class="location-grid">
+            
+            <!-- Left Side - Google Map -->
+            <div class="map-container">
+                <div class="map-wrapper">
+                    <!-- YOUR EXACT GOOGLE MAPS EMBED -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.7930765996293!2d75.90595119999999!3d22.7848337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39631d318b4487c3%3A0xfed503e85642ffe2!2sSai%20Pooja%20Pattal%20Dona%20Bhandar!5e1!3m2!1sen!2sin!4v1767031340486!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Sai Pooja Pattal Dona Bhandar Location">
+                    </iframe>
+                </div>
+                
+                <!-- Get Directions Button Overlay -->
+                <div class="map-overlay">
+                    <a href="https://www.google.com/maps/place/Sai+Pooja+Pattal+Dona+Bhandar/@22.7848337,75.90595119999999,17z/data=!3m1!4b1!4m6!3m5!1s0x39631d318b4487c3:0xfed503e85642ffe2!8m2!3d22.7848337!4d75.9059512!16s%2Fg%2F11y3z_8y4k?entry=ttu&g_ep=EgoyMDI1MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-primary">
+                        <i class="fas fa-directions"></i>
+                        <span data-lang="map-get-directions">Get Directions</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side - Contact Details -->
+            <div class="location-details">
+                
+                <!-- Address Card -->
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h4 data-lang="contact-address-title">Factory & Office Address</h4>
+                        <p data-lang="contact-address-text">
+                            Sai Pooja Pattal Dona Bhandar<br>
+                            Lasuliya mori Shop number 5, Shiv market,Essar petrol pump ke samne, Dewas Naka, Indore, Madhya Pradesh(453771)<br>
+                            Madhya Pradesh, India
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="detail-card">
+                    <div class="detail-icon phone-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h4 data-lang="contact-phone-title">Call Us Anytime</h4>
+                        <p>
+                            <a href="tel:+919893471456" class="contact-link">
+                                +91 98934 71456
+                            </a>
+                        </p>
+                        <small data-lang="contact-phone-hours">Available 24/7 for Your Needs</small>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Card -->
+                <div class="detail-card">
+                    <div class="detail-icon whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h4>WhatsApp</h4>
+                        <p>
+                            <a href="https://wa.me/919893471456?text=Hello%2C%20I%20am%20interested%20in%20your%20products" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="contact-link">
+                                +91 98934 71456
+                            </a>
+                        </p>
+                        <small data-lang="contact-whatsapp-text">Instant Response Guaranteed</small>
+                    </div>
+                </div>
+
+                <!-- Business Hours Card -->
+                <div class="detail-card">
+                    <div class="detail-icon clock-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h4>Business Hours</h4>
+                        <p>
+                            <strong>Monday - Sunday</strong><br>
+                            Open 24/7 for Orders & Support
+                        </p>
+                        <small>We Never Close - Always Available</small>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="location-cta">
+                    <a href="tel:+919893471456" class="btn btn-primary btn-large pulse-btn">
+                        <i class="fas fa-phone-alt"></i>
+                        Call Now
+                    </a>
+                    <a href="https://wa.me/919893471456?text=Hello%2C%20I%20want%20to%20order%20disposable%20products" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-whatsapp btn-large pulse-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp Now
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Trust Badges -->
+        <div class="location-trust-badges">
+            <div class="trust-badge-item">
+                <i class="fas fa-truck"></i>
+                <span>Pan India Delivery</span>
+            </div>
+            <div class="trust-badge-item">
+                <i class="fas fa-certificate"></i>
+                <span>GST Registered</span>
+            </div>
+            <div class="trust-badge-item">
+                <i class="fas fa-award"></i>
+                <span>ISO Certified</span>
+            </div>
+            <div class="trust-badge-item">
+                <i class="fas fa-leaf"></i>
+                <span>Eco-Friendly Products</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-lang="cta-heading">Ready to Order Premium Quality Disposables?</h2>
+                <p data-lang="cta-text">Contact us today for bulk quotes, product samples, free consultation, or any inquiries. Our expert team is ready to assist you 24/7!</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/919893471456?text=Hello!%20I%20need%20product%20quotation" class="btn btn-white pulse-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-lang="cta-whatsapp">WhatsApp for Instant Quote</span>
+                    </a>
+                    <a href="tel:+919893471456" class="btn btn-outline-white">
+                        <i class="fas fa-phone-volume"></i>
+                        <span data-lang="cta-call">Call: +91 98934 71456</span>
+                    </a>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-clock"></i>
+                        <span data-lang="cta-feat1">24-Hour Response Time</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-gift"></i>
+                        <span data-lang="cta-feat2">Free Samples Available</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-truck-fast"></i>
+                        <span data-lang="cta-feat3">Fast Delivery Nationwide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span data-lang="company-name">Sai Pooja Pattal Dona</span>
+                    </div>
+                    <p data-lang="footer-desc">India's most trusted manufacturer of premium disposable paper products. Serving businesses nationwide with unmatched quality, reliability, and excellence since 2010.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/919893471456" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+919893471456" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:amitm1508@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-lang="footer-quick">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-lang="nav-home">Home</a></li>
+                        <li><a href="about.html" data-lang="nav-about">About Us</a></li>
+                        <li><a href="products.html" data-lang="nav-products">Products</a></li>
+                        <li><a href="contact.html" data-lang="nav-contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-lang="footer-products">Our Products</h4>
+                    <ul>
+                        <li><a href="products.html#paper-cups" data-lang="prod1-title">Paper Cups</a></li>
+                        <li><a href="products.html#water-glasses" data-lang="prod2-title">Disposable Glasses</a></li>
+                        <li><a href="products.html#dona-pattal" data-lang="prod3-title">Dona & Pattal</a></li>
+                        <li><a href="products.html#paper-plates" data-lang="prod4-title">Paper Plates & Thalis</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-lang="footer-contact">Contact Information</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-user"></i>
+                            <span>Amit Majumdar</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919893471456">+91 98934 71456</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+918871230005">+91 88712 30005</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:amitm1508@gmail.com">amitm1508@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-lang="footer-address">Dewas Naka, Madhya Pradesh, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+           <div class="footer-bottom">
+    <p>
+        © 2025 Sai Pooja Pattal Dona Bhandar. All Rights Reserved. | GST Registered | Proudly Made in India 🇮🇳
+        <br>
+        <span style="font-size: 0.75rem; opacity: 0.8;">
+            Designed & Developed by 
+            <a href="https://theunlocksales.github.io/theunlocksales/" target="_blank" rel="noopener" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">
+                The Unlock Sales
+            </a>
+        </span>
+    </p>
+</div>
+
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919893471456?text=Hello!%20I%20need%20assistance" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
